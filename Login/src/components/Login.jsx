@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+
 const Login = () => {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  function handleLogin(e) {
+    console.log(e);
+  }
   return (
     <>
       <div className="flex flex-row flex-wrap justify-center items-center">
         <div className="w-1/3 h-2/3 flex-row m-20 p-10 border-2 rounded-2xl">
           <h2 className="text-2xl font-bold text-center">Login</h2>
-          <form action="">
+          <form
+            action={() => {
+              handleLogin(e);
+            }}
+          >
             <label htmlFor="username" className="block mt-2">
               Username
             </label>

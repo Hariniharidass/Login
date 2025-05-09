@@ -16,6 +16,18 @@ const Register = () => {
               type="text"
               name="username"
               id="username"
+              placeholder="Type your name"
+              className="block w-full border-b-2 outline-none mt-2"
+            />
+            <label htmlFor="email" className="block mt-2">
+              Email
+            </label>
+            <input
+              required
+              autoFocus
+              type="email"
+              name="email"
+              id="email"
               placeholder="Type your email"
               className="block w-full border-b-2 outline-none mt-2"
             />
